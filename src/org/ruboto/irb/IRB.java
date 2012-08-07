@@ -1,7 +1,5 @@
 package org.ruboto.irb;
 
-
-//import net.android.facebook;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.File;
@@ -78,14 +76,11 @@ import org.ruboto.JRubyAdapter;
 
 public class IRB extends org.ruboto.EntryPointActivity implements OnItemClickListener,
 		OnTabChangeListener {
-	//////////////////////////////////////////////////////////////
-	// Stores names of traversed directories
-	ArrayList<String> str = new ArrayList<String>();
+
+		ArrayList<String> str = new ArrayList<String>();
 
 	// Check if the first level of the directory structure is the one showing
 	private Boolean firstLvl = true;
-
-	private static final String TAG = "F_PATH";
 
 	private Item[] fileList;
 	private File path = new File(Environment.getExternalStorageDirectory() + "");
@@ -93,8 +88,7 @@ public class IRB extends org.ruboto.EntryPointActivity implements OnItemClickLis
 	private static final int DIALOG_LOAD_FILE = 1000;
 
 	ListAdapter adapter1;
-	//////////////////////////////////////////////////////////////
-//	public static final String TAG = "Ruboto-IRB";
+	public static final String TAG = "Ruboto-IRB";
 	public static final String SDCARD_SCRIPTS_DIR = "/sdcard/jruby";
 
 	
